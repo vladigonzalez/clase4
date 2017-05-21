@@ -4,75 +4,175 @@
 	<meta charset="utf-8">
 	<title>Web</title>
 	<style>
-		header{
+	    html, body {
+        	box-sizing: border-box;
+        	margin: 0;
+        }
+        .textcentrado {
+			text-align: center;
+        }
+		.encabezado {
 			background-image: url("./images/bg.jpeg");
 			background-repeat: no-repeat;
-			height: 400px ;
+			background-size: cover;
+			background-position: center;
+			height: 450px ;
 			width: 100% ;
+        	color: white;
+		}
+		.logo{
+			float: left;
+			width: 15% ; 
+			height: 10% ;
+			padding: 35px;
+			margin-left: 100px ;
+		}
+		.menu {
+			float: right;
+			padding: 30px; 
+		}
+		li {			
+        	list-style: none;
+        	float: left;
+        	padding-right: 50px;        	
+        	}
+        .textoheader {
+        	position: absolute;
+        	top: 100px;
+        	width: 50%;
+        	height: 400px ;
+        	margin-left: 25%;
+        	font-size: 40px ;
+        }
+        .botonazul{
+        	background-color: #52A5CB;
+        	color: white ; 
+        	border-radius: 10% ; 
+        	height: 30px ;
+        	border-style: none 
+        }
+        .botonverde{
+        	background-color: #79D783;
+        	color: white ; 
+        	border-radius: 10% ; 
+        	height: 30px ;
+        	border-style: none 
+        }
+        .sizep1{
+        	font-size: 14px;
+        }
+        .contenido {
+        	margin: 0 ;
+        	width: 50% ;
+        	margin-left: 25%;
+        	height: auto ;
+        }
+        .sizeimagen{
+			width: 60% ; 
+			height: 70% ;
+        }
+        .contenido1{
+        	background-color: #EDE8F7 ;
+        	height: 300px ;
+        	width: 100% ;
+        	border-top: 1px solid silver; 
+        	border-bottom: 1px solid silver;
+		}
+		h3{
+			margin: 0 ;
+		}
+		h4{
+			padding: 30px ;
+		}
+		strong { 
+    		font-weight: bold;
+		}		
+        .contenido2{
+        	height: 200px ;
+        	width: 50% ;
+        	margin-left: 30%;
+        	padding-top: 50px;
+		}
+		.contacto {
+			float: left;
+			margin: 0;
+			width: 300px;
+		}
+		.btnenviar {
+			background-color: white ; 
+			border-color: silver ;
+			border-radius: 10% ; 
+			height: 30px ;
+		}
+		.piepag {
+			text-align: center;
+ 			background-color: #010101; 
+ 			height: 50px ; 
+ 			padding: 10px ;"
+		}
+		#colorpie {
+			color: gray ; 
 		}
 	</style>
 </head>
 <body>
-	<header>
-		<div>
-			<img src="./images/latam_logo.png" alt="logo" style="width: 20% ; height: 10%">
-			<div>
-				<ul style="color: white; list-style-type: none;">
-					<li>Equipo</li>
-					<li>Blog</li>
-					<li>Contacto</li>
-				</ul>
-			</div>
-			<p style="text-align: center; color: white ; font-size: 26px">COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO</p>
-			<button style="color: #00DDFF ; border-radius: 10% ; height: 30px ;">comienza acá!</button>
-			<button style="color: #00DDFF ; border-radius: 10% ; height: 30px ;">más info</button>
-			<p style="text-align: center; color: white ;">Hay una escacez gigante de desarrolladores en el mundo y aun mas en latinoamerica, se necesitan mmás desarrolladores tu puedes ser uno de ellos.</p>
+	<div class="encabezado textcentrado">
+		<img class="logo" src="./images/latam_logo.png" alt="logo">
+		<nav class="menu">
+			<ul>
+				<li>Equipo</li>
+				<li>Blog</li>
+				<li>Contacto</li>
+			</ul>
+		</nav>
+		<div class="textoheader">
+			<p>COMIENZA UNA NUEVA VIDA Y ÚNETE AL MUNDO TECNOLÓGICO</p>
+			<button class="botonazul">  comienza acá!  </button>
+			<button class="botonverde">  más info  </button>
+			<p class="sizep1">Hay una escacez gigante de desarrolladores en el mundo y aun mas en latinoamerica, se necesitan más desarrolladores tu puedes ser uno de ellos.</p>
 		</div>
-
-	</header>
-	<main>
-		<div style="text-align: center;">
-			<h3">EL BOOTCAMP DE PROGRAMACION MAS MAS GRANDE DE LATINOAMERICA</h3>
-			<p style="font-size: 10px ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>		
-		</div>
-		<div style="text-align: center;">	
-			<img src="./images/viewing-gallery-for-happy-people.png" style="width: 30% ; height: 30% ">
-		</div>	
-		<div style="background-color: #CCCCCC ;height: 200px ; text-align: center; padding: 30px; border-top: 1px solid silver; border-bottom: 1px solid silver;">	
-			<h3>SOLICITA INFORMACIÓN E INSCRÍBETE</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
-			</p>
-			<button style="background-color: #00DDFF ; border-color: #00DDFF ; border-radius: 10% ; height: 30px ;">inscribete!</button>
+	</div>
+	<div class="contenido textcentrado">
+		<h4>EL BOOTCAMP DE PROGRAMACION MAS MAS GRANDE DE LATINOAMERICA</h4>
+		<p class="sizep1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<img class="sizeimagen" src="./images/viewing-gallery-for-happy-people.png">
+	</div>
+	<div class="contenido1 textcentrado">
+		<h4>SOLICITA INFORMACIÓN E INSCRÍBETE</h4>
+		<p class="sizep1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.	
+		</p>
+		<button class="botonazul">inscribete!</button>
 			<p>Vive la experiencia Desafio Latam</p>
-		</div>	
-		<div>
-			<div style="float: left; margin-left: 20px ">
-				<h4>Contacto</h4>
-				<p>Desafio Latam <br>
-				Ezequias allende 2361 <br>
-				P: +56 
-				</p>
-				<p>inscripciones@desafiolatam.com</p>
-			</div>
-			<div style="float: left; margin-left: 50px ;">
-				<p>Suscribete loco</p>
-				<input type="text" name="ingresa tu mail">
-				<button style="background-color: #00DDFF ; border-color: #00DDFF ; border-radius: 10% ; height: 30px ;">enviar</button>
-			</div>
+	</div>	
+	<div class="contenido2">
+		<div class="contacto">
+			<h3>Contacto</h3>
+			<br>
+			<strong>Desafio Latam</strong>
+			<p>Ezequias allende 2361 <br>
+			P: +56 9 5117 7975
+			</p>
+			<a style="color: #52A5CB ;" href="mailto:inscripciones@desafiolatam.com">inscripciones@desafiolatam.com</a>
 		</div>
-	</main>
-	<footer style="background-color: #010101; height: 50px ; padding: 10px ;">
-		<p style="color: gray ; text-align: center;">DESAFIOLATAM 2017 - CURSO FULLSTACK G8</p>
-	</footer>	
+		<div class="Contacto">
+			<h3>Suscribete loco</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+			<input type="text" name="ingresa tu mail">
+			<button class="Btnenviar">enviar</button>
+		</div>
+	</div>
+	<div class="piepag">
+		<p id="colorpie">DESAFIOLATAM 2017 - CURSO FULLSTACK G8</p>
+	</div>	
 </body>
 </html>
